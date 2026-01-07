@@ -46,6 +46,7 @@ const userRegister=async(req,res)=>{
             return res.status(404).json({result:false,message:"required field is userProfile"}) 
         }
         const data=await userModel.findOne({email});
+        console.log(data)
         if(data){
             return res.status(404).json({result:false,message:"Email is already exists"})
         }
