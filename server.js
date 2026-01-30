@@ -15,7 +15,7 @@ mongoose.connect(db_url,{
     console.log("MongoDB database conneted successfully")
 })
 .catch((err)=>{
-    console.log("Database connection failed",err.message)
+    console.log("Database connection test failed",err.message)
 
 });
 
@@ -29,3 +29,4 @@ server.listen(port,err=>{
     }
 
 });
+
